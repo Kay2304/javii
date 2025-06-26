@@ -4,100 +4,162 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - Keletso Mashabela</title>
+  <title>Keletso Mashabela - Data Scientist Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body class="bg-[#0f172a] text-white font-sans relative overflow-hidden">
 
-  <!-- Animated Particles Background -->
-  <div id="tsparticles" class="absolute top-0 left-0 w-full h-full -z-10"></div>
+<!-- Particle Background -->
+<div id="tsparticles" class="absolute top-0 left-0 w-full h-full -z-10"></div>
 
-  <!-- Navbar -->
-  <nav class="flex justify-end gap-8 p-6 text-white font-medium uppercase text-sm z-10 relative">
-    <a href="#hero" class="border-b-2 border-white">Home</a>
-    <a href="#skills">Skills</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<!-- Navbar -->
+<nav class="flex justify-center gap-8 p-6 font-medium uppercase text-sm z-10 relative bg-black bg-opacity-40">
+  <a href="#hero" class="hover:text-blue-400">Home</a>
+  <a href="#skills" class="hover:text-blue-400">Skills</a>
+  <a href="#services" class="hover:text-blue-400">Services</a>
+  <a href="#projects" class="hover:text-blue-400">Projects</a>
+  <a href="#experience" class="hover:text-blue-400">Experience</a>
+  <a href="#education" class="hover:text-blue-400">Education</a>
+  <a href="#contact" class="hover:text-blue-400">Contact</a>
+</nav>
 
-  <!-- Hero Section -->
-  <section id="hero" class="flex flex-col md:flex-row justify-between items-center p-10 md:p-20 min-h-[80vh] relative z-10">
-    <div class="mb-10 md:mb-0">
-      <h2 class="text-lg text-gray-300">Keletso <span class="text-blue-400 font-bold">Mashabela</span></h2>
-      <h1 class="text-4xl md:text-5xl font-bold my-4">Keletso Mashabela</h1>
-      <h3 class="text-xl text-gray-300 mb-6">Data Scientist <span class="text-blue-400 animate-pulse">Building...</span></h3>
-      <div class="flex gap-4">
-        <a href="#contact" class="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition">Contact Me</a>
-        <a href="#" class="border border-blue-400 px-6 py-3 rounded-full text-blue-400 hover:bg-blue-600 hover:text-white transition">
-          <i class="fa fa-download mr-2"></i>Download Resume
-        </a>
-      </div>
+<!-- Hero -->
+<section id="hero" class="flex flex-col md:flex-row justify-between items-center px-10 py-20 min-h-[90vh] relative z-10">
+  <div class="max-w-xl">
+    <h1 class="text-5xl font-bold mb-4">Keletso Mashabela</h1>
+    <h2 class="text-xl text-blue-400 font-semibold mb-6">Data Scientist</h2>
+    <p class="text-gray-300 mb-6">
+      Transforming data into powerful insights that drive results. I build predictive models, automate reporting processes, and design intuitive dashboards to support smarter decision-making.
+    </p>
+    <div class="flex gap-4 flex-wrap">
+      <a href="#contact" class="bg-blue-600 px-6 py-3 rounded-full hover:bg-blue-700 transition">Contact Me</a>
+      <a href="https://www.kaggle.com/kay2304" target="_blank" class="bg-gray-800 border border-blue-500 px-6 py-3 rounded-full hover:bg-blue-700 transition">Kaggle Profile</a>
     </div>
+  </div>
+</section>
 
-    <!-- Sidebar Description Box -->
-    <div class="bg-gray-800 p-6 rounded-lg max-w-xl">
-      <h4 class="text-yellow-300 text-lg mb-3 font-semibold">📊 Data Science Expertise</h4>
-      <p class="text-gray-300 text-sm mb-4">
-        I transform raw data into intelligent insights that power smart business decisions. My expertise spans machine learning, statistical modeling, and data storytelling. I specialize in solving real-world problems with data—from predictive modeling to dashboard design—ensuring decisions are grounded in evidence. I blend technical rigor with strategic thinking to deliver measurable impact.
-      </p>
-      <div class="flex flex-wrap gap-2 mt-4">
-        <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Python & SQL</span>
-        <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Data Visualization</span>
-        <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Machine Learning</span>
-        <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Statistical Analysis</span>
-        <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">ETL Pipelines</span>
-        <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Business Intelligence</span>
-      </div>
+<!-- Skills -->
+<section id="skills" class="bg-[#1e293b] p-10 md:p-20 relative z-10">
+  <h2 class="text-3xl font-bold mb-6 text-center text-white">Top Data Science Skills</h2>
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center text-sm text-gray-300">
+    <div class="bg-gray-800 rounded-lg py-4">Python (Scripting, Analysis)</div>
+    <div class="bg-gray-800 rounded-lg py-4">SQL / MySQL / PostgreSQL</div>
+    <div class="bg-gray-800 rounded-lg py-4">SQLAlchemy</div>
+    <div class="bg-gray-800 rounded-lg py-4">Excel / Power Tools</div>
+    <div class="bg-gray-800 rounded-lg py-4">Power BI / DAX</div>
+    <div class="bg-gray-800 rounded-lg py-4">Scikit-Learn</div>
+    <div class="bg-gray-800 rounded-lg py-4">Pandas / NumPy</div>
+    <div class="bg-gray-800 rounded-lg py-4">Matplotlib / Seaborn</div>
+    <div class="bg-gray-800 rounded-lg py-4">Git & GitHub</div>
+    <div class="bg-gray-800 rounded-lg py-4">Docker</div>
+    <div class="bg-gray-800 rounded-lg py-4">ETL Pipeline Development</div>
+    <div class="bg-gray-800 rounded-lg py-4">Jupyter Notebook</div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="bg-[#0f172a] px-10 py-20 relative z-10">
+  <h2 class="text-3xl font-bold mb-10 text-center">Data Science Services</h2>
+  <div class="grid md:grid-cols-3 gap-10">
+    <div class="bg-gray-800 p-6 rounded-xl">
+      <h3 class="text-xl font-semibold text-yellow-300 mb-3">📊 Data Analysis</h3>
+      <p class="text-gray-300 mb-4">Transform your raw data into actionable insights. I specialize in cleaning, processing, and analyzing data to uncover trends and patterns.</p>
+      <a href="#contact" class="text-blue-400 underline">Get in Touch</a>
     </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="p-10 md:p-20 bg-[#1e293b] relative z-10">
-    <h2 class="text-3xl font-bold mb-6 text-center text-white">Skills</h2>
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center text-sm text-gray-300">
-      <div class="bg-gray-800 rounded-lg py-4">Python</div>
-      <div class="bg-gray-800 rounded-lg py-4">SQL</div>
-      <div class="bg-gray-800 rounded-lg py-4">Pandas</div>
-      <div class="bg-gray-800 rounded-lg py-4">NumPy</div>
-      <div class="bg-gray-800 rounded-lg py-4">Scikit-learn</div>
-      <div class="bg-gray-800 rounded-lg py-4">Power BI</div>
-      <div class="bg-gray-800 rounded-lg py-4">Excel</div>
-      <div class="bg-gray-800 rounded-lg py-4">Data Wrangling</div>
-      <div class="bg-gray-800 rounded-lg py-4">Data Cleaning</div>
-      <div class="bg-gray-800 rounded-lg py-4">Model Deployment</div>
-      <div class="bg-gray-800 rounded-lg py-4">Dashboard Design</div>
-      <div class="bg-gray-800 rounded-lg py-4">Machine Learning</div>
+    <div class="bg-gray-800 p-6 rounded-xl">
+      <h3 class="text-xl font-semibold text-yellow-300 mb-3">📈 Data Visualization</h3>
+      <p class="text-gray-300 mb-4">Convert complex data into compelling dashboards and reports that are easy to understand and impactful for decision-makers.</p>
+      <a href="#contact" class="text-blue-400 underline">Get in Touch</a>
     </div>
-  </section>
+    <div class="bg-gray-800 p-6 rounded-xl">
+      <h3 class="text-xl font-semibold text-yellow-300 mb-3">🔄 ETL Processes</h3>
+      <p class="text-gray-300 mb-4">Design and implement efficient Extract, Transform, Load pipelines that integrate data from various sources into structured systems.</p>
+      <a href="#contact" class="text-blue-400 underline">Get in Touch</a>
+    </div>
+  </div>
+</section>
 
-  <!-- Particles Script -->
-  <script>
-    tsParticles.load("tsparticles", {
-      background: { color: { value: "#0f172a" } },
-      fpsLimit: 60,
-      interactivity: {
-        events: {
-          onClick: { enable: true, mode: "push" },
-          onHover: { enable: true, mode: "repulse" },
-        },
-        modes: {
-          push: { quantity: 4 },
-          repulse: { distance: 100, duration: 0.4 }
-        }
+<!-- Projects (template) -->
+<section id="projects" class="bg-[#1e293b] p-10 md:p-20 relative z-10">
+  <h2 class="text-3xl font-bold mb-6 text-center">Projects</h2>
+  <p class="text-center text-gray-400 mb-10">Here are a few sample projects. Yours will go here!</p>
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="bg-gray-800 p-6 rounded-lg">
+      <h4 class="text-xl font-semibold text-blue-400">Automated Reporting System</h4>
+      <p class="text-sm text-gray-300 mt-2">Reduced manual reporting time by 90% through Python-based automation and data processing.</p>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-lg">
+      <h4 class="text-xl font-semibold text-blue-400">Sales Analytics ETL</h4>
+      <p class="text-sm text-gray-300 mt-2">Built robust ETL pipeline for 20,000+ rows of data with PostgreSQL and Power BI dashboards.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience" class="bg-[#0f172a] px-10 py-20 relative z-10">
+  <h2 class="text-3xl font-bold mb-10 text-center">Experience</h2>
+  <div class="space-y-8">
+    <div>
+      <h3 class="text-xl font-semibold text-yellow-300">Data Automation Intern – Springer Capital (3 months)</h3>
+      <p class="text-gray-300">Automated Excel-based reporting tasks using Python and Power BI. Improved reporting efficiency by reducing manual processes.</p>
+      <p class="text-sm text-gray-400 mt-1">Skills: Python, Power BI, Automation, Excel</p>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold text-yellow-300">Deal Sourcing Intern – Extern (3 months)</h3>
+      <p class="text-gray-300">Analyzed potential investment opportunities by scraping, cleaning, and evaluating startup data for sourcing strategies.</p>
+      <p class="text-sm text-gray-400 mt-1">Skills: Data Analysis, Research, Python, Google Sheets</p>
+    </div>
+  </div>
+</section>
+
+<!-- Education -->
+<section id="education" class="bg-[#1e293b] p-10 md:p-20 relative z-10">
+  <h2 class="text-3xl font-bold mb-6 text-center">Education & Certifications</h2>
+  <ul class="text-gray-300 space-y-6">
+    <li><strong class="text-white">May 2025:</strong> Data Science – ALX & Explore AI<br/>Comprehensive program in statistical analysis, machine learning, and real-world project work.</li>
+    <li><strong class="text-white">Current:</strong> Software Engineering (Professional Development) – ALX<br/>Focusing on backend, full-stack, and engineering principles.</li>
+  </ul>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="bg-[#0f172a] px-10 py-20 relative z-10">
+  <h2 class="text-3xl font-bold mb-6 text-center">Contact</h2>
+  <p class="text-center text-gray-300 mb-8">Feel free to contact me for data analysis projects, collaborations, or job opportunities.</p>
+  <div class="flex flex-col md:flex-row justify-center gap-10 text-center text-gray-300">
+    <a href="https://www.kaggle.com/kay2304" target="_blank" class="hover:text-blue-400"><i class="fab fa-kaggle"></i> Kaggle</a>
+    <a href="https://www.linkedin.com/in/keletso-mashabela-2a6a86248/" target="_blank" class="hover:text-blue-400"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a href="https://github.com/Kay2304" target="_blank" class="hover:text-blue-400"><i class="fab fa-github"></i> GitHub</a>
+  </div>
+</section>
+
+<!-- Particles Script -->
+<script>
+  tsParticles.load("tsparticles", {
+    background: { color: { value: "#0f172a" } },
+    fpsLimit: 60,
+    interactivity: {
+      events: {
+        onClick: { enable: true, mode: "push" },
+        onHover: { enable: true, mode: "repulse" }
       },
-      particles: {
-        color: { value: "#ffffff" },
-        links: { enable: true, color: "#ffffff", distance: 150, opacity: 0.3, width: 1 },
-        move: { enable: true, speed: 1 },
-        number: { value: 60 },
-        opacity: { value: 0.5 },
-        shape: { type: "circle" },
-        size: { value: { min: 1, max: 3 } }
+      modes: {
+        push: { quantity: 4 },
+        repulse: { distance: 100, duration: 0.4 }
       }
-    });
-  </script>
+    },
+    particles: {
+      color: { value: "#ffffff" },
+      links: { enable: true, color: "#ffffff", distance: 150, opacity: 0.3, width: 1 },
+      move: { enable: true, speed: 1 },
+      number: { value: 60 },
+      opacity: { value: 0.5 },
+      shape: { type: "circle" },
+      size: { value: { min: 1, max: 3 } }
+    }
+  });
+</script>
 
 </body>
 </html>
