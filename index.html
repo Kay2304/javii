@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="style.css" />
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,168 +6,131 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Keletso Mashabela | Data Scientist</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header class="hero">
-    <h1>Keletso Mashabela</h1>
-    <p>Aspiring Data Scientist | Automation Enthusiast | Problem Solver</p>
-    <a href="mailto:keletso.xavi2@gmail.com" class="btn">Contact Me</a>
-    <a href="#" class="btn btn-alt">Download Resume</a>
+    <nav>
+      <h1>Keletso Mashabela</h1>
+      <div class="nav-links">
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+    <div class="hero-text">
+      <h2>Data Scientist | Automation Enthusiast</h2>
+      <p>Transforming data into decisions. I build insightful dashboards, predictive models, and clean pipelines.</p>
+      <div class="cta-buttons">
+        <a href="#contact" class="btn">Contact Me</a>
+        <a href="#" class="btn alt">Download Resume</a>
+      </div>
+    </div>
   </header>
 
-  <section class="skills">
-    <h2>Skills</h2>
+  <section id="skills" class="skills section">
+    <h2>Top Skills</h2>
     <div class="grid">
-      <div><strong>Programming:</strong> Python, SQL, MySQL, PostgreSQL</div>
-      <div><strong>Data Science:</strong> Pandas, NumPy, Scikit-learn, Power BI</div>
-      <div><strong>Tools:</strong> Excel, Git, APIs, Kaggle, VS Code</div>
+      <div class="card">Python</div>
+      <div class="card">SQL</div>
+      <div class="card">Power BI</div>
+      <div class="card">Scikit-learn</div>
+      <div class="card">Pandas & NumPy</div>
+      <div class="card">Data Cleaning</div>
+      <div class="card">APIs</div>
+      <div class="card">ETL Processes</div>
     </div>
   </section>
 
-  <section class="services">
-    <h2>Services</h2>
-    <ul>
-      <li>🔄 Data Wrangling & Automation</li>
-      <li>🧠 Machine Learning & Modeling</li>
-      <li>📊 Power BI Dashboards & Reports</li>
-      <li>🔗 ETL Workflows & Integration</li>
-    </ul>
-  </section>
+   <!-- Services Section -->
+<section class="services section">
+  <h2>What I Do</h2>
+  <ul>
+    <li>📊 Data Analysis & Storytelling</li>
+    <li>🧠 Machine Learning & Forecasting</li>
+    <li>📈 Power BI Dashboards</li>
+    <li>⚙️ Automation & ETL Pipelines</li>
+  </ul>
+</section>
 
-  <section class="projects">
-    <h2>Projects</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="assets/placeholder.png" alt="Project Screenshot" />
-        <h3>Sales Forecasting</h3>
-        <p>Used ML models to predict regional sales trends.</p>
-      </div>
-      <div class="card">
-        <img src="assets/placeholder.png" alt="Project Screenshot" />
-        <h3>Customer Segmentation</h3>
-        <p>Interactive Power BI dashboard to target key customers.</p>
-      </div>
+<!-- Projects Section -->
+<section id="projects" class="projects section">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="assets/placeholder.png" alt="Project image">
+      <h3>Gemstone Price Predictor</h3>
+      <p>Built a regression model with 97.8% accuracy using scikit-learn.</p>
     </div>
-  </section>
-
-  <section class="experience">
-    <h2>Experience</h2>
-    <div>
-      <h3>Springer Capital – Data Automation Intern</h3>
-      <p>Feb 2025 – May 2025</p>
-      <ul>
-        <li>Automated financial data extraction & reporting with Python</li>
-        <li>Improved spreadsheet workflows using Pandas & Excel</li>
-      </ul>
+    <div class="card">
+      <img src="assets/placeholder.png" alt="Project image">
+      <h3>Power BI Dashboard</h3>
+      <p>Visualized financial data for internal operations. (In Progress)</p>
     </div>
-    <div>
-      <h3>Extern – Deal Sourcing Analyst</h3>
-      <p>Sept 2024 – Dec 2024</p>
-      <ul>
-        <li>Analyzed acquisition data and market trends</li>
-        <li>Built dashboards for sourcing pipeline insights</li>
-      </ul>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section class="experience section">
+  <h2>Experience</h2>
+  <h3>Springer Capital – Data Automation Intern</h3>
+  <p>Feb–May 2025</p>
+  <ul>
+    <li>Automated financial data processes using Python and Excel</li>
+    <li>APIs, quality checks, and spreadsheet optimization</li>
+  </ul>
+  <h3>Extern – Deal Sourcing Analyst</h3>
+  <p>Sept–Dec 2024</p>
+  <ul>
+    <li>Researched markets and acquisition trends</li>
+    <li>Built dashboards and data summaries</li>
+  </ul>
+</section>
+
+<!-- Education -->
+<section class="education section">
+  <h2>Education</h2>
+  <ul>
+    <li><strong>ALX / Explore AI:</strong> Data Science Graduate, May 2025</li>
+    <li><strong>ALX ProDev:</strong> Software Engineering (in progress)</li>
+  </ul>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials section">
+  <h2>What People Say</h2>
+  <div class="grid">
+    <div class="card">
+      <p>"Keletso is a focused and creative problem-solver."</p>
+      <small>– Colleague at Springer Capital</small>
     </div>
-  </section>
+    <div class="card">
+      <p>"She brings clarity to complex data and always delivers."</p>
+      <small>– Mentor at Explore AI</small>
+    </div>
+  </div>
+</section>
 
-  <section class="education">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Data Science (ALX & Explore AI)</strong> – Graduated May 2025</li>
-      <li><strong>Software Engineering (ALX ProDev)</strong> – Ongoing</li>
-    </ul>
-  </section>
+<!-- About Me -->
+<section class="about section">
+  <h2>About Me</h2>
+  <p>I love turning messy data into clear decisions. My mission is to uncover insights that drive real-world impact—through storytelling, strategy, and technology.</p>
+</section>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:keletso.xavi2@gmail.com">keletso.xavi2@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/keletso-mashabela-2a6a86248/" target="_blank">Keletso on LinkedIn</a></p>
-    <p>GitHub: <a href="https://github.com/Kay2304" target="_blank">github.com/Kay2304</a></p>
-    <p>Kaggle: <a href="https://www.kaggle.com/kay2304" target="_blank">kaggle.com/kay2304</a></p>
-  </section>
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+  <h2>Get In Touch</h2>
+  <p>Email: <a href="mailto:keletso.xavi2@gmail.com">keletso.xavi2@gmail.com</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/keletso-mashabela-2a6a86248" target="_blank">linkedin.com/in/keletso</a></p>
+  <p>GitHub: <a href="https://github.com/Kay2304" target="_blank">github.com/Kay2304</a></p>
+  <p>Kaggle: <a href="https://www.kaggle.com/kay2304" target="_blank">kaggle.com/kay2304</a></p>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Keletso Mashabela</p>
-  </footer>
+<!-- Footer -->
+<footer>
+  <p>© 2025 Keletso Mashabela — Powered by Data</p>
+</footer>
+
+
 </body>
 </html>
-
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-body {
-  background: #f7f8fa;
-  color: #333;
-  line-height: 1.6;
-}
-
-header.hero {
-  background: #1e2a38;
-  color: #fff;
-  text-align: center;
-  padding: 3rem 1rem;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-}
-
-.hero .btn {
-  display: inline-block;
-  margin: 1rem 0.5rem;
-  padding: 0.75rem 1.5rem;
-  background: #00a896;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.hero .btn-alt {
-  background: #05668d;
-}
-
-section {
-  padding: 2rem 1.5rem;
-}
-
-h2 {
-  margin-bottom: 1rem;
-  color: #05668d;
-}
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.card {
-  background: white;
-  padding: 1rem;
-  border-radius: 8px;
-  flex: 1 1 45%;
-  box-shadow: 0 0 6px rgba(0,0,0,0.1);
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-ul {
-  list-style: none;
-  margin-top: 0.5rem;
-}
-
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  background: #1e2a38;
-  color: white;
-}
