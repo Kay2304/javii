@@ -1,92 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Keletso Mashabela | Data Scientist</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="hero">
-    <h1>Keletso Mashabela</h1>
-    <p>Aspiring Data Scientist | Automation Enthusiast | Problem Solver</p>
-    <a href="mailto:keletso.xavi2@gmail.com" class="btn">Contact Me</a>
-    <a href="#" class="btn btn-alt">Download Resume</a>
-  </header>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
 
-  <section class="skills">
-    <h2>Skills</h2>
-    <div class="grid">
-      <div><strong>Programming:</strong> Python, SQL, MySQL, PostgreSQL</div>
-      <div><strong>Data Science:</strong> Pandas, NumPy, Scikit-learn, Power BI</div>
-      <div><strong>Tools:</strong> Excel, Git, APIs, Kaggle, VS Code</div>
-    </div>
-  </section>
+body {
+  background: #f7f8fa;
+  color: #333;
+  line-height: 1.6;
+}
 
-  <section class="services">
-    <h2>Services</h2>
-    <ul>
-      <li>🔄 Data Wrangling & Automation</li>
-      <li>🧠 Machine Learning & Modeling</li>
-      <li>📊 Power BI Dashboards & Reports</li>
-      <li>🔗 ETL Workflows & Integration</li>
-    </ul>
-  </section>
+header.hero {
+  background: #1e2a38;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+}
 
-  <section class="projects">
-    <h2>Projects</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="assets/placeholder.png" alt="Project Screenshot" />
-        <h3>Sales Forecasting</h3>
-        <p>Used ML models to predict regional sales trends.</p>
-      </div>
-      <div class="card">
-        <img src="assets/placeholder.png" alt="Project Screenshot" />
-        <h3>Customer Segmentation</h3>
-        <p>Interactive Power BI dashboard to target key customers.</p>
-      </div>
-    </div>
-  </section>
+.hero h1 {
+  font-size: 2.5rem;
+}
 
-  <section class="experience">
-    <h2>Experience</h2>
-    <div>
-      <h3>Springer Capital – Data Automation Intern</h3>
-      <p>Feb 2025 – May 2025</p>
-      <ul>
-        <li>Automated financial data extraction & reporting with Python</li>
-        <li>Improved spreadsheet workflows using Pandas & Excel</li>
-      </ul>
-    </div>
-    <div>
-      <h3>Extern – Deal Sourcing Analyst</h3>
-      <p>Sept 2024 – Dec 2024</p>
-      <ul>
-        <li>Analyzed acquisition data and market trends</li>
-        <li>Built dashboards for sourcing pipeline insights</li>
-      </ul>
-    </div>
-  </section>
+.hero .btn {
+  display: inline-block;
+  margin: 1rem 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #00a896;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
 
-  <section class="education">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Data Science (ALX & Explore AI)</strong> – Graduated May 2025</li>
-      <li><strong>Software Engineering (ALX ProDev)</strong> – Ongoing</li>
-    </ul>
-  </section>
+.hero .btn-alt {
+  background: #05668d;
+}
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:keletso.xavi2@gmail.com">keletso.xavi2@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/keletso-mashabela-2a6a86248/" target="_blank">Keletso on LinkedIn</a></p>
-    <p>GitHub: <a href="https://github.com/Kay2304" target="_blank">github.com/Kay2304</a></p>
-    <p>Kaggle: <a href="https://www.kaggle.com/kay2304" target="_blank">kaggle.com/kay2304</a></p>
-  </section>
+section {
+  padding: 2rem 1.5rem;
+}
 
-  <footer>
-    <p>&copy; 2025 Keletso Mashabela</p>
-  </footer>
-</body>
-</html>
+h2 {
+  margin-bottom: 1rem;
+  color: #05668d;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1 1 45%;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #1e2a38;
+  color: white;
+}
