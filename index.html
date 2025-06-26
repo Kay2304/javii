@@ -10,14 +10,28 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     body {
-      background: linear-gradient(180deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+      
+background: linear-gradient(120deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+background-attachment: fixed;
+animation: gradientShift 20s ease infinite;
+
     }
     .glass {
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.1);
       backdrop-filter: blur(8px);
     }
-  </style>
+  
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+body {
+  background-size: 200% 200%;
+}
+</style>
+
 </head>
 <body class="text-white font-sans scroll-smooth">
 
@@ -44,7 +58,34 @@
   </div>
 </section>
 
+
 <!-- SERVICES -->
+<section id="services" class="py-20 px-6 bg-gradient-to-br from-[#1e293b] via-[#0f172a] to-[#1e293b]">
+  <h2 class="text-3xl font-bold mb-8 text-center">What I Do</h2>
+  <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+    <div class="glass p-6 rounded-lg" data-aos="fade-up">
+      <h3 class="text-xl font-semibold text-yellow-400 mb-3">Data Analysis</h3>
+      <p class="text-gray-300">Clean and interpret complex datasets to drive business outcomes and strategic decisions.</p>
+    </div>
+    <div class="glass p-6 rounded-lg" data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-xl font-semibold text-yellow-400 mb-3">Data Visualization</h3>
+      <p class="text-gray-300">Create impactful dashboards and graphs that translate numbers into narratives.</p>
+    </div>
+    <div class="glass p-6 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+      <h3 class="text-xl font-semibold text-yellow-400 mb-3">ETL Automation</h3>
+      <p class="text-gray-300">Build pipelines that extract, transform, and load data to automate reporting and analysis.</p>
+    </div>
+    <div class="glass p-6 rounded-lg" data-aos="fade-up" data-aos-delay="300">
+      <h3 class="text-xl font-semibold text-yellow-400 mb-3">Machine Learning</h3>
+      <p class="text-gray-300">Develop and deploy ML models to solve business problems and forecast outcomes.</p>
+    </div>
+    <div class="glass p-6 rounded-lg" data-aos="fade-up" data-aos-delay="400">
+      <h3 class="text-xl font-semibold text-yellow-400 mb-3">Automation with Python</h3>
+      <p class="text-gray-300">Script and automate daily operations or reporting tasks, boosting productivity and accuracy.</p>
+    </div>
+  </div>
+</section>
+
 <section id="services" class="py-20 px-6 bg-[#1e293b]">
   <h2 class="text-3xl font-bold mb-8 text-center">What I Do</h2>
   <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -91,7 +132,19 @@
   </div>
 </section>
 
+
 <!-- CONTACT -->
+<section id="contact" class="py-20 px-6">
+  <h2 class="text-3xl font-bold mb-6 text-center">Let’s Connect</h2>
+  <p class="text-center text-gray-300 mb-4">Reach out to me for collaboration, freelance work, or just to connect over data science!</p>
+  <p class="text-center text-blue-300 text-lg font-semibold mb-6"><i class="fas fa-envelope"></i> keletso.xavi2@gmail.com</p>
+  <div class="flex flex-col md:flex-row justify-center gap-10 text-lg text-gray-300 text-center">
+    <a href="https://www.kaggle.com/kay2304" target="_blank" class="hover:text-blue-400"><i class="fab fa-kaggle"></i> Kaggle</a>
+    <a href="https://www.linkedin.com/in/keletso-mashabela-2a6a86248/" target="_blank" class="hover:text-blue-400"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a href="https://github.com/Kay2304" target="_blank" class="hover:text-blue-400"><i class="fab fa-github"></i> GitHub</a>
+  </div>
+</section>
+
 <section id="contact" class="py-20 px-6">
   <h2 class="text-3xl font-bold mb-6 text-center">Let’s Connect</h2>
   <div class="flex flex-col md:flex-row justify-center gap-10 text-lg text-gray-300 text-center">
