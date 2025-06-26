@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e2a38;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+header.hero {
+  background: linear-gradient(to right, #1e2a38, #34495e);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-buttons {
+  margin-top: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  background: #00a896;
+  color: #fff;
+  border-radius: 5px;
+  margin-right: 1rem;
+  font-weight: 600;
+}
+
+.btn.alt {
+  background: #05668d;
+}
+
+.section {
+  padding: 3rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.skills .grid,
+.projects .grid,
+.services .grid,
+.testimonials .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  font-weight: 600;
+}
+
+.services ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.services li {
+  background: white;
+  padding: 1.25rem;
+  border-left: 4px solid #00a896;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.projects .card img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.experience,
+.education,
+.contact,
+.about,
+.testimonials {
+  background: #fff;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.03);
+}
+
+footer {
+  background: #1e2a38;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
